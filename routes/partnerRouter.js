@@ -9,7 +9,7 @@ partnerRouter
     next();
   })
   .get((req, res) => {
-    res.end('Will send all the partner to you');
+    res.end('Will send all the partners to you');
   })
   .post((req, res) => {
     res.end(
@@ -37,7 +37,7 @@ partnerRouter
   .post((req, res) => {
     res.statusCode = 403;
     res.end(
-      `POST operation not supported on /partner/${req.params.partnerId}`
+      `POST operation not supported on /partners/${req.params.partnerId}`
     );
   })
   .put((req, res) => {
